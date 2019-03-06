@@ -1,0 +1,14 @@
+
+{% extends 'base.html' %}
+{% block content %}
+<h1>자세한내용을 알려주는 페이지</h1>
+<div class="container jumbotron">
+    <h1>{{ twodetails.title }}</h1>
+    <!-- <img class="card-img-top" height="200" src="{{ blog.image.url }}" alt="Card image cap"> -->
+    <p>{{ twodetails.pub_date }}</p>
+    <p>{{ twodwtails.body }}</p>
+    
+    <a href="{% url 'twohome' %}">돌아가기</a>
+</div>
+
+{% endblock %}
